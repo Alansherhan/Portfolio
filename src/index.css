@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0B0E14; /* Deep Charcoal */
+  --color-brand-primary: #00D2FF; /* Electric Blue */
+  --color-brand-secondary: #9D50BB; /* Nebula Purple */
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-primary);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-brand-bg);
+  color: #F8FAFC; /* Light gray for readability */
+  overflow-x: hidden;
+}
+
+/* Utilities for gradient text */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+  }
+}
