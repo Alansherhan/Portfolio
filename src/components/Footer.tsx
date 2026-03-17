@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Send, CheckCircle2 } from 'lucide-react';
+import { Github, Instagram, Linkedin, Send, CheckCircle2, Mail, Twitter } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -52,7 +52,7 @@ export default function Footer() {
           </motion.div>
         )}
       </AnimatePresence>
-      
+
       {/* Background ambient glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-primary/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none" />
 
@@ -116,6 +116,21 @@ export default function Footer() {
                 >
                   <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
                   <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+                </svg>
+              </a>
+              <a href="mailto:alansherhan10@gmail.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-brand-primary/50 transition-all group">
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              </a>
+              <a href="https://x.com/AlanSherhanKp" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-brand-primary/50 transition-all group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5 group-hover:scale-110 transition-transform"
+                >
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
 
